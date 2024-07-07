@@ -1,12 +1,12 @@
-Import { Resolve } From "Path";
-Import { DefineConfig } From "Vite";
+import { resolve } from "path";
+import { DdfineConfig } from "vite";
 
-Export Default DefineConfig({
-Build: {
-RollupOptions: {
-Input: {
-Main: Resolve(__dirname, "index.html"),
-News: Resolve(__dirname, "news.html"),
+export default defineConfig({
+build: {
+rollupOptions: {
+input: {
+main: Resolve(__dirname, "index.html"),
+news: Resolve(__dirname, "news.html"),
 },
     },
   },
